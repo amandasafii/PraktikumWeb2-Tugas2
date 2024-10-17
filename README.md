@@ -197,7 +197,7 @@ Code akses modifier protected : <br>
 
 ```php
 <?php
- public function __construct()
+ protected $connect;          
 ?>
 ```
 
@@ -387,7 +387,7 @@ Code role pegawai cuti : <br>
 ?>
 ```
 
-**- Role Pegawai 'Amanda' Cuti.** <br>
+**- Role Pegawai 'Amanda' Alfa.** <br>
 Class Polimorphysm pada role ini sama seperti pada Role Owner, tetapi pada Role ini menggunakan filter :<br>
 ""SELECT * FROM tbl_izin WHERE keperluan = 'Alfa' and nama_pengusul = 'Amanda'""<br>
 supaya hanya data milik 'Amanda' saja yang tampil.<br>
@@ -410,21 +410,21 @@ Code role pegawai Alfa : <br>
 ## Hasil Tampilan :<br><br>
 **1. Tampilan Role Owner**<br>
 Menampilkan seluruh data izin ketidakhadiran pegawai yang hanyab bisa diakses oleh Owner :<br>
-![image](https://github.com/user-attachments/assets/bf74172b-84a1-452b-812e-fa1047483a6e)<br>
-![image](https://github.com/user-attachments/assets/580f361d-1642-422b-a979-485c203c350a)<br><br>
+![image](https://github.com/user-attachments/assets/3755de36-2fd8-48a6-9104-403c5293f993)
+<br><br>
 
 **2. Tampilan Role Pegawai**<br>
-**- Role Pegawai Sakit**
+**- Role Pegawai Sakit**<br>
 Menampilkan data izin ketidakhadiran pegawai yang hanya menampilkan data izin Sakit 'Amanda' yang bisa diakses oleh pegawai 'Amanda' dan dapat diakses oleh Owner :<br>
-![image](https://github.com/user-attachments/assets/19ac69c6-4eef-4e2b-b377-70a14a8eca16)<br>
-![image](https://github.com/user-attachments/assets/ee5463ae-fe96-425e-a015-b0977a57d20b)<br><br>
+![image](https://github.com/user-attachments/assets/be470e36-db84-4192-a49c-714d52a76746)<br><br>
 
-**- Role Pegawai Alfa**
+**- Role Pegawai Cuti**<br>
+Menampilkan data izin ketidakhadiran pegawai yang hanya menampilkan data izin Cuti 'Amanda' yang bisa diakses oleh pegawai 'Amanda' dan dapat diakses oleh Owner :<br>
+![image](https://github.com/user-attachments/assets/d85b1aca-5698-4c79-9be1-30a03886f5ac)<br><br>
+
+**- Role Pegawai Alfa**<br>
 Menampilkan data izin ketidakhadiran pegawai yang hanya menampilkan data izin Alfa 'Amanda' yang bisa diakses oleh pegawai 'Amanda' dan dapat diakses oleh Owner :<br>
-![image](https://github.com/user-attachments/assets/b1920d16-4723-4a2b-94e3-51f14af05a88)<br>
-![image](https://github.com/user-attachments/assets/11b987c7-5765-43de-9481-f1fa1fa3788f)<br><br>
-
-
+![image](https://github.com/user-attachments/assets/3d658de0-f1f7-433c-b39b-4f157c92c1ff)
 
 
 
