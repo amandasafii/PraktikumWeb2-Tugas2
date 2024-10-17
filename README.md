@@ -176,7 +176,7 @@ $db = new Database();
 <i>**Menerapkan enkapsulasi sesuai logika studi kasus**</i><br>
 Pada dasarnya, Enkapsulasi adalah penyembunyian detail internal dari suatu objek dan mengontrol akses ke data atau metode yang dimilikinya. Dengan enkapsulasi, data dan fungsionalitas objek dilindungi sehingga hanya bagian tertentu yang bisa diakses dan dimanipulasi oleh bagian lain dari program.<br>
 
-**Akses Modifier Private**<br>
+**a. Akses Modifier Private**<br>
 Pada studi kasus kali ini, objek yang di enkapsulasi pertama yaitu objek $host, $user, $pass, dan $db pada class Database menjadi private. Supaya hanya dapat diakses dari dalam kelas itu sendiri, tidak bisa diakses dari luar, yaitu class Database. Sebab $host, $user, $pass, dan $db mempunyai akses penting terkakit nama host dari server, nama pengguna, password, dan nama basis data yang ingin diakses <br><br>
 
 Code akses modifier private : <br>
@@ -190,7 +190,7 @@ private $host = "localhost"; // Nama host, default adalah localhost
 ?>
 ```
 
-**Akses Modifier Protected**<br>
+**b. Akses Modifier Protected**<br>
 Pada studi kasus kali ini, objek yang di enkapsulasi kedua yaitu objek $connect pada class Database menjadi protected. Supaya dapat diakses oleh kelas turunan (subclass) dan dari kelas yang ada dalam package yang sama, yaitu class Sakit, class izin, dan class Alfa pada Database. Sebab $connect menjaga supaya database hanya bisa diakses oleh turunan dari kelas class Database saja. <br><br>
 
 Code akses modifier protected : <br>
@@ -201,7 +201,7 @@ Code akses modifier protected : <br>
 ?>
 ```
 
-**Akses Modifier Public**<br>
+**c. Akses Modifier Public**<br>
 Pada studi kasus kali ini, objek yang di enkapsulasi terakhir yaitu metode tampilData() pada class Database menjadi public. Supaya dapat diakses dari mana saja, termasuk dari luar kelas Database.<br><br>
 
 Code akses modifier public : <br>
